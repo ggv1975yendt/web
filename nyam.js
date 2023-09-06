@@ -294,13 +294,13 @@
         };
         Lampa.Lang.add({
           torrent_parser_nofiles: {
-            ru: 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¸Ð·Ð²Ð»ÐµÑ‡ÑŒ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ÑÑ‰Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ñ‹'
+            ru: 'Не удалось извлечь подходящие файлы'
           },
           settings_rest_source: {
-            ru: 'Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº'
+            ru: 'Источник'
           },
           title_filter: {
-            ru: 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€'
+            ru: 'Фильтр'
           }
         });
         Lampa.Template.add('sisi_style', "\n            <style>\n                .sisi--filter-button{\n                    background-color: #393a44;\n                    padding: .7em 1em;\n                    font-size: 1.1em;\n                    -webkit-border-radius: .2em;\n                    -moz-border-radius: .2em;\n                    border-radius: .2em;\n                    font-weight: 300;\n                    margin-right: 1em;\n                    display:-webkit-box;\n                    display:-webkit-flex;\n                    display:-moz-box;\n                    display:-ms-flexbox;\n                    display:flex;\n                }\n                .sisi--filter-button > div{\n                    margin-left: .5em;\n                }\n                .sisi--filter-button.focus{\n                    background-color: #d81f26;\n                }\n            </style>\n        ");
@@ -314,7 +314,7 @@
         button.on('hover:enter', function () {
           Lampa.Activity.push({
             url: '',
-            title: 'ÐšÐ»ÑƒÐ±Ð½Ð¸Ñ‡ÐºÐ°',
+            title: 'Клубничка',
             component: 'sisi',
             page: 1
           });
