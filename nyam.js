@@ -35,9 +35,8 @@
         }
         network["native"]('http://vi.sisi.am/', function (data) {
           filter_sources = data.channels;
-          var last_url =  Lampa.Storage.get('sisi_last_url', '');
-          last_url = ''
-            
+          var last_url = Lampa.Storage.get('sisi_last_url', '');
+
           if (last_url) {
             filter_sources.forEach(function (a) {
               if (last_url.indexOf(a.playlist_url) >= 0) a.selected = true;
