@@ -28,7 +28,7 @@
 
         unic_id = unic_id.toLowerCase();
         var btn = filter.render().find('.torrent-filter');
-        var uid = $('<div style="-webkit-align-self: center; -ms-flex-item-align: center; align-self: center; font-size: 1.2em;"><span>ID</span> <span style="background-color: rgba(255, 255, 255, 0.3); padding: 0 0.5em; border-radius: 0.2em; font-size: 1.1em;">' + unic_id + '</span></div>');
+        var uid = $('<div style="-webkit-align-self: center; -ms-flex-item-align: center; align-self: center; font-size: 1.2em;"><span>Ð’Ð°Ñˆ ID</span> <span style="background-color: rgba(255, 255, 255, 0.3); padding: 0 0.5em; border-radius: 0.2em; font-size: 1.1em;">' + unic_id + '</span></div>');
         if (btn.length) btn.append(uid);else {
           filter.render().attr('style', 'padding: 0 1.2em 1.2em 1.2em; display: flex;').append(uid);
           filter.render().find('.simple-button').addClass('sisi--filter-button');
@@ -294,13 +294,13 @@
         };
         Lampa.Lang.add({
           torrent_parser_nofiles: {
-            ru: 'Не удалось извлечь подходящие файлы'
+            ru: 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¸Ð·Ð²Ð»ÐµÑ‡ÑŒ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ÑÑ‰Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ñ‹'
           },
           settings_rest_source: {
-            ru: 'Источник'
+            ru: 'Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº'
           },
           title_filter: {
-            ru: 'Фильтр'
+            ru: 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€'
           }
         });
         Lampa.Template.add('sisi_style', "\n            <style>\n                .sisi--filter-button{\n                    background-color: #393a44;\n                    padding: .7em 1em;\n                    font-size: 1.1em;\n                    -webkit-border-radius: .2em;\n                    -moz-border-radius: .2em;\n                    border-radius: .2em;\n                    font-weight: 300;\n                    margin-right: 1em;\n                    display:-webkit-box;\n                    display:-webkit-flex;\n                    display:-moz-box;\n                    display:-ms-flexbox;\n                    display:flex;\n                }\n                .sisi--filter-button > div{\n                    margin-left: .5em;\n                }\n                .sisi--filter-button.focus{\n                    background-color: #d81f26;\n                }\n            </style>\n        ");
@@ -314,7 +314,7 @@
         button.on('hover:enter', function () {
           Lampa.Activity.push({
             url: '',
-            title: 'Клубничка',
+            title: 'ÐšÐ»ÑƒÐ±Ð½Ð¸Ñ‡ÐºÐ°',
             component: 'sisi',
             page: 1
           });
