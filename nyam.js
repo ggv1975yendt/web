@@ -28,16 +28,16 @@
 
         unic_id = unic_id.toLowerCase();
         var btn = filter.render().find('.torrent-filter');
-        var uid = $('<div style="-webkit-align-self: center; -ms-flex-item-align: center; align-self: center; font-size: 1.2em;"><span>ID</span> <span style="background-color: rgba(255, 255, 255, 0.3); padding: 0 0.5em; border-radius: 0.2em; font-size: 1.1em;">' + unic_id + '</span></div>');
+        var uid = $('<div style="-webkit-align-self: center; -ms-flex-item-align: center; align-self: center; font-size: 1.2em;"><span>Ð’Ð°Ñˆ ID</span> <span style="background-color: rgba(255, 255, 255, 0.3); padding: 0 0.5em; border-radius: 0.2em; font-size: 1.1em;">' + unic_id + '</span></div>');
         if (btn.length) btn.append(uid);else {
           filter.render().attr('style', 'padding: 0 1.2em 1.2em 1.2em; display: flex;').append(uid);
           filter.render().find('.simple-button').addClass('sisi--filter-button');
         }
-        network["native"]('channels.json', function (data) {
+        network["native"]('http://vi.sisi.am/', function (data) {
           filter_sources = data.channels;
           var last_url = Lampa.Storage.get('sisi_last_url', '');
           last_url = ''
-              
+            
           if (last_url) {
             filter_sources.forEach(function (a) {
               if (last_url.indexOf(a.playlist_url) >= 0) a.selected = true;
