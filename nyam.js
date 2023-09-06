@@ -36,7 +36,6 @@
         network["native"]('channels.json', function (data) {
           filter_sources = data.channels;
           var last_url = Lampa.Storage.get('sisi_last_url', '');
-          last_url = ''
             
           if (last_url) {
             filter_sources.forEach(function (a) {
@@ -46,7 +45,7 @@
 
           if (!filter_sources.find(function (a) {
             return a.selected;
-          })) filter_sources[1].selected = true;
+          })) filter_sources[0].selected = true;
 
           _this.build();
 
