@@ -33,7 +33,7 @@
           filter.render().attr('style', 'padding: 0 1.2em 1.2em 1.2em; display: flex;').append(uid);
           filter.render().find('.simple-button').addClass('sisi--filter-button');
         }
-        network["native"]('/channels.json', function (data) {
+        network["native"]('channels.json', function (data) {
           filter_sources = data.channels;
           var last_url =  Lampa.Storage.get('sisi_last_url', '');
           last_url = ''
