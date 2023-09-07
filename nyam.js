@@ -126,8 +126,8 @@
           card.addClass('card--collection');
           card.find('.card__img').attr('src', element.picture);
           card.find('.card__age').remove();
-          if (element.quality) card.find('.card__view').append('<div class="card__quality"><div>' + element.quality + '</div></div>');
           if (element.time) card.find('.card__view').append('<div class="card__type">' + element.time + '</div>');
+          if (element.quality) card.find('.card__view').append('<div class="card__quality"><div>' + element.quality + '</div></div>');
           card.on('hover:focus', function () {
             last = card[0];
             scroll.update(card, true);
