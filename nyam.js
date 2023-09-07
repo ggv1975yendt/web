@@ -33,10 +33,10 @@
           filter.render().attr('style', 'padding: 0 1.2em 1.2em 1.2em; display: flex;').append(uid);
           filter.render().find('.simple-button').addClass('sisi--filter-button');
         }
-        network["native"]('channels.json', function (data) {
+        network["native"]('http://vi.sisi.am/', function (data) {
           filter_sources = data.channels;
           var last_url = Lampa.Storage.get('sisi_last_url', '');
-            
+
           if (last_url) {
             filter_sources.forEach(function (a) {
               if (last_url.indexOf(a.playlist_url) >= 0) a.selected = true;
@@ -45,7 +45,7 @@
 
           if (!filter_sources.find(function (a) {
             return a.selected;
-          })) filter_sources[0].selected = true;
+          })) filter_sources[1].selected = true;
 
           _this.build();
 
