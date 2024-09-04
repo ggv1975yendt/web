@@ -102,7 +102,7 @@
       name: 'My.Parser.App',
       settings: {
         url: '93.183.127.129:9117',
-        key: '77ajwbwivhya1oaxpo4qits4ryga4m6',
+        key: '779ajwbwivhya1oaxpo4qits4ryga4m6',
         parser_torrent_type: 'jackett'
       }
     }];
