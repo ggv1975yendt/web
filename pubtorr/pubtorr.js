@@ -99,10 +99,18 @@
       }
     }, {
       base: 'My_Parser_App',
-      name: 'My.Parser.App',
+      name: 'My Viewbox Films',
       settings: {
         url: '93.183.127.129:9117',
         key: '779ajwbwivhya1oaxpo4qits4ryga4m6',
+        parser_torrent_type: 'jackett'
+      }
+    }, {
+      base: 'My_Parser_App_XXX',
+      name: 'My Viewbox Films 18++',
+      settings: {
+        url: '93.183.127.129:9127',
+        key: 'vglr5gzxw0k78o5cnyodyfad8ijakjk8',
         parser_torrent_type: 'jackett'
       }
     }];
